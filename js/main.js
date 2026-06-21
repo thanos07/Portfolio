@@ -46,16 +46,6 @@
     contactForm.addEventListener('submit', function (e) {
       e.preventDefault();
 
-      // Honeypot tripped — almost certainly a bot. Pretend it worked (don't tip
-      // them off) but never actually send the request, so it doesn't count against
-      // the Formspree quota.
-      var honeypot = document.getElementById('cf-hp');
-      if (honeypot && honeypot.value) {
-        setContactNote('Thanks — your message is sent. I\u2019ll reply by email soon.', 'is-success');
-        contactForm.reset();
-        return;
-      }
-
       var submitBtn = contactForm.querySelector('button[type="submit"]');
       var formAction = contactForm.getAttribute('action') || '';
       var notConfigured = formAction.indexOf('YOUR_FORM_ID') !== -1;

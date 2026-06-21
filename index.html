@@ -422,16 +422,6 @@
               action="https://formspree.io/f/mvzjpbvp" method="POST">
           <input type="hidden" name="_subject" value="New message from portfolio site">
 
-          <!-- Honeypot: invisible to real visitors (off-screen, not tab-focusable,
-               hidden from screen readers), but most spam bots fill every field they
-               find. Formspree silently discards any submission where this is non-empty.
-               main.js also short-circuits client-side if it's filled, so bots don't
-               even cost you a submission against your monthly quota. -->
-          <div class="hp-field" aria-hidden="true">
-            <label for="cf-hp">Leave this field empty</label>
-            <input type="text" id="cf-hp" name="_gotcha" tabindex="-1" autocomplete="off">
-          </div>
-
           <label for="cf-name">Name</label>
           <input type="text" id="cf-name" name="name" required autocomplete="name">
 

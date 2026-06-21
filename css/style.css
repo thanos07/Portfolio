@@ -710,13 +710,6 @@ textarea:focus-visible {
 }
 .contact-form button { align-self: flex-start; margin-top: 0.4rem; }
 .contact-form button:disabled { opacity: 0.6; cursor: not-allowed; }
-.hp-field {
-  position: absolute;
-  left: -9999px;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-}
 .contact-form-note {
   font-size: 0.85rem;
   color: #8FB0F5;
