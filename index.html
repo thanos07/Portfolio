@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Md Tahammul Noor — ML/AI Engineer</title>
+<meta name="description" content="Md Tahammul Noor — M.Tech CSE student building AI/ML systems: agentic incident triage, RAG document QA, and an IEEE-accepted publication.">
+
+<!-- Favicon: inline monogram, no extra asset request -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%230A1628'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='28' fill='%232856E0' text-anchor='middle'%3ETN%3C/text%3E%3C/svg%3E">
+
+<!-- Fonts: Fraunces (display), IBM Plex Sans (body), IBM Plex Mono (data/labels) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- Marks JS as active *before* paint so [data-reveal] elements start hidden only when
+     animation will actually run. If GSAP fails to load, main.js removes this class
+     and content is shown immediately — see the fallback branch in js/main.js. -->
+<script>document.documentElement.classList.add('js-ready');</script>
+
+<!-- Skip link for keyboard/screen-reader users -->
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============ NAV ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="nav-inner">
+    <a href="#home" class="logo" aria-label="Md Tahammul Noor — home">TN<span class="logo-dot">.</span></a>
+
+    <nav class="primary-nav" id="primaryNav" aria-label="Primary">
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#research">Research</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <!-- PLACEHOLDER: confirm resume.pdf is your latest version before deploying -->
+      <a class="btn btn-ghost-on-dark nav-resume" href="assets/resume.pdf" download>Resume</a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="hero-trace" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <p class="eyebrow eyebrow-light" data-reveal>M.TECH CSE · NIT JALANDHAR · 2024–2026</p>
+      <h1 class="hero-name" data-reveal>Md Tahammul Noor</h1>
+      <p class="hero-statement" data-reveal>M.Tech CSE student building AI/ML systems — from LLM evaluation to deployed RAG and agentic triage tools.</p>
+
+      <div class="hero-links" data-reveal>
+        <a href="https://github.com/thanos07" target="_blank" rel="noopener" class="icon-link" aria-label="GitHub profile">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 .5C5.65.5.5 5.66.5 12.02c0 5.09 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.34-1.28-1.7-1.28-1.7-1.04-.72.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.69 1.25 3.34.96.1-.74.4-1.25.73-1.54-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.51-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.21-1.5 3.18-1.18 3.18-1.18.62 1.59.23 2.77.11 3.06.74.81 1.19 1.84 1.19 3.1 0 4.43-2.7 5.41-5.27 5.69.42.36.78 1.08.78 2.17 0 1.57-.01 2.83-.01 3.21 0 .3.21.66.79.55A10.97 10.97 0 0 0 23.5 12.02C23.5 5.66 18.35.5 12 .5Z"/></svg>
+          <span>GitHub</span>
+        </a>
+        <a href="https://www.linkedin.com/in/mdtnoor/" target="_blank" rel="noopener" class="icon-link" aria-label="LinkedIn profile">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg>
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://leetcode.com/u/mdtahammulnoor/" target="_blank" rel="noopener" class="icon-link" aria-label="LeetCode profile">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M16.5 2.5 7.8 11.2a2.7 2.7 0 0 0 0 3.8l4.2 4.2a2.6 2.6 0 0 0 3.7 0l1.9-1.9a1.3 1.3 0 0 0-1.8-1.8l-1.9 1.8a.9.9 0 0 1-1.3 0l-4.1-4.1a.9.9 0 0 1 0-1.3l8.7-8.7a1.3 1.3 0 0 0-1.8-1.7ZM10 14.8h7.7a1.3 1.3 0 1 0 0-2.6H10a1.3 1.3 0 0 0 0 2.6Z"/></svg>
+          <span>LeetCode</span>
+        </a>
+        <a href="https://www.geeksforgeeks.org/profile/thanos7" target="_blank" rel="noopener" class="icon-link" aria-label="GeeksforGeeks profile">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M9.4 16.6 4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4Zm5.2 0L19.2 12l-4.6-4.6L16 6l6 6-6 6-1.4-1.4Z"/></svg>
+          <span>GeeksforGeeks</span>
+        </a>
+        <a href="mailto:noorali99307@gmail.com" class="icon-link" aria-label="Send email">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M2 5.5A1.5 1.5 0 0 1 3.5 4h17A1.5 1.5 0 0 1 22 5.5v13a1.5 1.5 0 0 1-1.5 1.5h-17A1.5 1.5 0 0 1 2 18.5v-13Zm2.2.5 7.8 6 7.8-6H4.2ZM20 7.4l-7.5 5.77a1.5 1.5 0 0 1-1.86 0L3.1 7.4V18h16.9V7.4Z"/></svg>
+          <span>Email</span>
+        </a>
+      </div>
+
+      <div class="hero-cta-row" data-reveal>
+        <a href="assets/resume.pdf" download class="btn btn-primary">
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M12 16.5 6.5 11l1.4-1.4L11 12.7V3h2v9.7l3.1-3.1L17.5 11 12 16.5ZM5 19h14v2H5v-2Z"/></svg>
+          Download résumé
+        </a>
+        <a href="#projects" class="btn btn-outline-light">View projects</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROOF STRIP ============ -->
+  <section class="proof-strip" aria-label="Highlights">
+    <div class="proof-inner">
+      <div class="proof-stat" data-reveal>
+        <span class="proof-number" data-count-to="4" data-suffix="">000</span>
+        <span class="proof-label">Deployed AI/ML projects</span>
+      </div>
+      <div class="proof-stat" data-reveal>
+        <span class="proof-number" data-count-to="2026" data-suffix="">0000</span>
+        <span class="proof-label">IEEE AIEI publication</span>
+      </div>
+      <div class="proof-stat" data-reveal>
+        <span class="proof-number" data-count-to="350" data-suffix="+">000</span>
+        <span class="proof-label">DSA problems solved</span>
+      </div>
+      <div class="proof-stat" data-reveal>
+        <span class="proof-number proof-number-static">M.Tech</span>
+        <span class="proof-label">CSE, NIT Jalandhar</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURED PROJECTS ============ -->
+  <section class="section" id="projects">
+    <div class="section-inner">
+      <p class="eyebrow" data-reveal><span class="trace-tick"></span>SECTION 01 — FEATURED PROJECTS</p>
+      <h2 class="section-title" data-reveal>Systems I've designed, built, and shipped</h2>
+      <p class="section-lede" data-reveal>Ordered by relevance to ML/AI engineering work, not by date. Each one runs end-to-end — ingestion to output — not a notebook experiment.</p>
+
+      <!-- Project 1: TriageIQ -->
+      <article class="case-card" data-reveal>
+        <div class="case-head">
+          <div>
+            <p class="case-eyebrow">PROJECT 01 — INCIDENT INTELLIGENCE · MAR 2026</p>
+            <h3 class="case-title">TriageIQ</h3>
+            <p class="case-subtitle">Agentic AI Incident Triage System</p>
+          </div>
+          <span class="status-tag">STATUS: SHIPPED</span>
+        </div>
+
+        <div class="case-stack" aria-label="Tech stack">
+          <span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">Streamlit</span><span class="tag">SQLite</span><span class="tag">Groq API</span>
+        </div>
+
+        <div class="case-body">
+          <div class="case-col">
+            <p class="case-label">Problem</p>
+            <p>Manual incident triage from CSV, JSON, and free-text records is slow, inconsistent across reviewers, and difficult to audit after the fact.</p>
+          </div>
+          <div class="case-col">
+            <p class="case-label">Build</p>
+            <p>A multi-agent workflow — <strong>Severity Agent, Root Cause Agent, Runbook Agent,</strong> and <strong>Summary Agent</strong> — that ingests raw incident data, validates and extracts fields, classifies severity, drafts root-cause and runbook recommendations, then routes everything through an approval/rejection review flow with structured logs persisted to SQLite.</p>
+          </div>
+          <div class="case-col">
+            <p class="case-label">Outcome</p>
+            <p>Confidence-scored triage decisions with a full audit trail — every record traceable from raw input to action recommendation, built for accountability, not just classification.</p>
+          </div>
+        </div>
+
+        <div class="case-links">
+          <a href="https://github.com/thanos07/triageiq" target="_blank" rel="noopener" class="case-link" aria-label="TriageIQ on GitHub">Code <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path fill="currentColor" d="M7 17 17 7M9 7h8v8"/></svg></a>
+          <a href="https://triageiq.streamlit.app/" target="_blank" rel="noopener" class="case-link" aria-label="TriageIQ live demo">Live demo <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path fill="currentColor" d="M7 17 17 7M9 7h8v8"/></svg></a>
+        </div>
+      </article>
+
+      <!-- Project 2: ScholarSync -->
+      <article class="case-card" data-reveal>
+        <div class="case-head">
+          <div>
+            <p class="case-eyebrow">PROJECT 02 — DOCUMENT INTELLIGENCE · NOV 2024</p>
+            <h3 class="case-title">ScholarSync</h3>
+            <p class="case-subtitle">RAG-based Document QA System</p>
+          </div>
+          <span class="status-tag">STATUS: SHIPPED</span>
+        </div>
+
+        <div class="case-stack" aria-label="Tech stack">
+          <span class="tag">LangChain</span><span class="tag">Groq</span><span class="tag">ChromaDB</span><span class="tag">Streamlit</span>
+        </div>
+
+        <div class="case-body">
+          <div class="case-col">
+            <p class="case-label">Problem</p>
+            <p>Finding a precise answer inside large, multi-document PDF datasets usually means manual search across dozens of files.</p>
+          </div>
+          <div class="case-col">
+            <p class="case-label">Build</p>
+            <p>A retrieval-augmented QA pipeline: document chunking, vector indexing in ChromaDB, semantic retrieval, and Groq-backed response generation — with retrieval quality improved through context-window organization and validation of every answer against the source documents.</p>
+          </div>
+          <div class="case-col">
+            <p class="case-label">Outcome</p>
+            <p>Deployed on Streamlit Cloud, returning answers grounded in and checkable against the original source text — not unverified summaries.</p>
+          </div>
+        </div>
+
+        <div class="case-links">
+          <a href="https://github.com/thanos07/ScholarSync" target="_blank" rel="noopener" class="case-link" aria-label="ScholarSync on GitHub">Code <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path fill="currentColor" d="M7 17 17 7M9 7h8v8"/></svg></a>
+          <a href="https://x-scholarsync.streamlit.app/" target="_blank" rel="noopener" class="case-link" aria-label="ScholarSync live demo">Live demo <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path fill="currentColor" d="M7 17 17 7M9 7h8v8"/></svg></a>
+        </div>
+      </article>
+
+      <!-- Project 3: AeroReserve (smaller card) -->
+      <article class="case-card case-card-compact" data-reveal>
+        <div class="case-head">
+          <div>
+            <p class="case-eyebrow">PROJECT 03 — FULL-STACK SYSTEMS · MAY 2023</p>
+            <h3 class="case-title">AeroReserve</h3>
+          <span class="status-tag">STATUS: CODE COMPLETE</span>
+        </div>
+        <div class="case-stack" aria-label="Tech stack">
+          <span class="tag">React</span><span class="tag">Node.js</span><span class="tag">TypeScript</span><span class="tag">OpenSky API</span>
+        </div>
+        <p class="case-compact-desc">Full-stack flight search and reservation system with a modular frontend/backend split and live aircraft position tracking via the OpenSky API.</p>
+        <div class="case-links">
+          <a href="https://github.com/thanos07/AeroReserve" target="_blank" rel="noopener" class="case-link" aria-label="AeroReserve on GitHub">Code <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path fill="currentColor" d="M7 17 17 7M9 7h8v8"/></svg></a>
+        </div>
+      </article>
+
+      <!-- Project 4: Medikit -->
+      <article class="case-card" data-reveal>
+        <div class="case-head">
+          <div>
+            <p class="case-eyebrow">PROJECT 04 — CLINICAL AI SIMULATION · MAY 2026</p>
+            <h3 class="case-title">Medikit</h3>
+            <p class="case-subtitle">AI Clinical Training Simulator</p>
+          </div>
+          <span class="status-tag">STATUS: SHIPPED</span>
+        </div>
+
+        <div class="case-stack" aria-label="Tech stack">
+          <span class="tag">React</span><span class="tag">Vite</span><span class="tag">FastAPI</span><span class="tag">Anthropic Claude</span><span class="tag">Groq API</span>
+        </div>
+
+        <div class="case-body">
+          <div class="case-col">
+            <p class="case-label">Problem</p>
+            <p>OSCE-style clinical training traditionally needs actors, supervising clinicians, and physical rooms — logistics-heavy and hard to scale for repeated trainee practice.</p>
+          </div>
+          <div class="case-col">
+            <p class="case-label">Build</p>
+            <p>A browser-based simulator covering <strong>18 OSCE-style cases</strong> across cardiology, surgery, respiratory, GI, endocrine, neuro, OB/GYN, paediatrics, renal, and psychiatry. Each case runs a Claude-driven patient persona for natural conversation, then an attending-grader model scores the trainee against case-specific criteria and published guidelines (ESC, NICE, BTS, RCOG). A Groq fallback keeps the simulator available if the primary Anthropic API is unreachable.</p>
+          </div>
+          <div class="case-col">
+            <p class="case-label">Outcome</p>
+            <p>Deployed end-to-end (Vercel frontend, Railway backend) as a free, always-on simulated OSCE environment that gives trainees structured, guideline-grounded feedback without real-patient risk.</p>
+          </div>
+        </div>
+
+        <div class="case-links">
+          <a href="https://github.com/thanos07/medkit" target="_blank" rel="noopener" class="case-link" aria-label="Medikit on GitHub">Code <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path fill="currentColor" d="M7 17 17 7M9 7h8v8"/></svg></a>
+          <a href="https://medkit-azure.vercel.app/" target="_blank" rel="noopener" class="case-link" aria-label="Medikit live demo">Live demo <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path fill="currentColor" d="M7 17 17 7M9 7h8v8"/></svg></a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+  <section class="section section-tint" id="experience">
+    <div class="section-inner">
+      <p class="eyebrow" data-reveal><span class="trace-tick"></span>SECTION 02 — EXPERIENCE</p>
+      <h2 class="section-title" data-reveal>Evaluating LLM outputs, before it was the headline job</h2>
+
+      <div class="exp-card" data-reveal>
+        <div class="exp-metrics">
+          <div class="exp-metric">
+            <span class="exp-metric-number">30%</span>
+            <span class="exp-metric-label">Improvement in AI response accuracy</span>
+          </div>
+          <div class="exp-metric">
+            <span class="exp-metric-number">25%</span>
+            <span class="exp-metric-label">Reduction in recurring model failure patterns</span>
+          </div>
+        </div>
+
+        <div class="exp-detail">
+          <p class="exp-role">AI Data Quality Reviewer <span class="exp-company">— Outlier / Remotask</span></p>
+          <p class="exp-meta">Freelance · Remote · Oct 2023 – Feb 2024</p>
+          <p class="exp-framing">Direct, hands-on experience evaluating LLM outputs and diagnosing model failure modes across coding, database, and reasoning tasks — the evaluation instincts that now shape how I design and audit AI/ML systems.</p>
+          <ul class="exp-bullets">
+            <li>Reviewed AI-generated responses across coding, database, and reasoning tasks for correctness, clarity, grammar, edge cases, and instruction adherence.</li>
+            <li>Quality-checked Python, C++, MySQL, and technical-explanation tasks against project guidelines, tracking recurring error patterns.</li>
+            <li>Delivered structured feedback loops that improved response accuracy and cut repeat failure modes — the metrics above.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RESEARCH & PUBLICATION ============ -->
+  <section class="section section-navy" id="research">
+    <div class="section-inner">
+      <p class="eyebrow eyebrow-light" data-reveal><span class="trace-tick trace-tick-light"></span>SECTION 03 — RESEARCH &amp; PUBLICATION</p>
+      <h2 class="section-title section-title-light" data-reveal>Peer-reviewed, not just self-reported</h2>
+
+      <div class="pub-card" data-reveal>
+        <span class="pub-tag">PUBLISHED — IEEE AIEI 2026</span>
+        <h3 class="pub-title">Policy-Constrained Geospatial Intelligence: Integrating Deep Learning with Multi-Criteria Analysis for Solar Energy Planning</h3>
+        <p class="pub-meta">Lead Author · IEEE AIEI 2026 · NIT Jamshedpur · DOI: 10.1109/AIEI69164.2026.11497333</p>
+        <p class="pub-gloss">Combines deep learning with multi-criteria spatial analysis to support renewable-energy site-planning decisions — applying data cleaning, validation logic, and decision-support modelling to real geospatial datasets.</p>
+        <div class="case-links">
+          <a href="https://ieeexplore.ieee.org/document/11497333" target="_blank" rel="noopener" class="pub-link" aria-label="Read the paper on IEEE Xplore">Read on IEEE Xplore <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path fill="currentColor" d="M7 17 17 7M9 7h8v8"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="section" id="skills">
+    <div class="section-inner">
+      <p class="eyebrow" data-reveal><span class="trace-tick"></span>SECTION 04 — SKILLS</p>
+      <h2 class="section-title" data-reveal>Toolkit</h2>
+
+      <div class="skills-grid">
+        <div class="skill-group" data-reveal>
+          <p class="skill-group-label">ML / Data</p>
+          <div class="skill-tags">
+            <span class="tag">Pandas</span><span class="tag">NumPy</span><span class="tag">Scikit-learn</span><span class="tag">LangChain</span><span class="tag">ChromaDB</span><span class="tag">OpenCV</span><span class="tag">Groq API</span>
+          </div>
+        </div>
+        <div class="skill-group" data-reveal>
+          <p class="skill-group-label">Languages</p>
+          <div class="skill-tags">
+            <span class="tag">Python</span><span class="tag">SQL</span><span class="tag">Java</span><span class="tag">C++</span><span class="tag">JavaScript</span><span class="tag">Shell</span>
+          </div>
+        </div>
+        <div class="skill-group" data-reveal>
+          <p class="skill-group-label">Backend / Infra</p>
+          <div class="skill-tags">
+            <span class="tag">FastAPI</span><span class="tag">Streamlit</span><span class="tag">SQLite</span><span class="tag">Docker</span><span class="tag">Git</span><span class="tag">Linux</span>
+          </div>
+        </div>
+        <div class="skill-group" data-reveal>
+          <p class="skill-group-label">Tools</p>
+          <div class="skill-tags">
+            <span class="tag">VS Code</span><span class="tag">KNIME</span><span class="tag">QGIS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EDUCATION ============ -->
+  <section class="section section-tint" id="education">
+    <div class="section-inner">
+      <p class="eyebrow" data-reveal><span class="trace-tick"></span>SECTION 05 — EDUCATION</p>
+
+      <div class="edu-row" data-reveal>
+        <div class="edu-item">
+          <p class="edu-school">Dr. B. R. Ambedkar National Institute of Technology, Jalandhar</p>
+          <p class="edu-degree">M.Tech in Computer Science &amp; Engineering · CGPA 7.87/10</p>
+          <p class="edu-dates">Aug 2024 – Jun 2026</p>
+        </div>
+        <div class="edu-item">
+          <p class="edu-school">Muzaffarpur Institute of Technology</p>
+          <p class="edu-degree">B.Tech in Information Technology · CGPA 8.07/10</p>
+          <p class="edu-dates">Aug 2019 – Aug 2023</p>
+        </div>
+      </div>
+
+      <details class="coursework" data-reveal>
+        <summary>Relevant coursework</summary>
+        <p>Data Structures &amp; Algorithms, DBMS, Operating Systems, Computer Networks, Machine Learning, Data Analytics with Python, Data Science for Engineers, Advanced Software Engineering, Physics-Informed Machine Learning.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- ============ ACHIEVEMENTS ============ -->
+  <section class="section section-compact" id="achievements">
+    <div class="section-inner">
+      <p class="eyebrow" data-reveal><span class="trace-tick"></span>SECTION 06 — ACHIEVEMENTS</p>
+      <div class="achv-grid" data-reveal>
+        <div class="achv-item">
+          <p class="achv-title">350+ DSA problems</p>
+          <p class="achv-detail">Solved across coding platforms · 10 LeetCode badges</p>
+        </div>
+        <div class="achv-item">
+          <p class="achv-title">Certifications</p>
+          <p class="achv-detail">Deep Learning · AWS Fundamentals · Linux &amp; Git</p>
+        </div>
+        <div class="achv-item">
+          <p class="achv-title">Leadership</p>
+          <p class="achv-detail">Lead Volunteer, WREC'25 NIT Jalandhar (200+ delegates) · Joint Secretary, BH3 Mess Committee (300 students)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section section-navy" id="contact">
+    <div class="section-inner">
+      <p class="eyebrow eyebrow-light" data-reveal><span class="trace-tick trace-tick-light"></span>SECTION 07 — CONTACT</p>
+      <h2 class="section-title section-title-light" data-reveal>Let's talk</h2>
+      <p class="section-lede section-lede-light" data-reveal>Open to ML/AI Engineer and Data Science roles. The fastest way to reach me is email.</p>
+
+      <div class="contact-grid">
+        <div class="contact-links" data-reveal>
+          <a href="mailto:noorali99307@gmail.com" class="contact-email">noorali99307@gmail.com</a>
+          <div class="hero-links hero-links-footer">
+            <a href="https://github.com/thanos07" target="_blank" rel="noopener" class="icon-link" aria-label="GitHub profile">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 .5C5.65.5.5 5.66.5 12.02c0 5.09 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.34-1.28-1.7-1.28-1.7-1.04-.72.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.69 1.25 3.34.96.1-.74.4-1.25.73-1.54-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.51-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.21-1.5 3.18-1.18 3.18-1.18.62 1.59.23 2.77.11 3.06.74.81 1.19 1.84 1.19 3.1 0 4.43-2.7 5.41-5.27 5.69.42.36.78 1.08.78 2.17 0 1.57-.01 2.83-.01 3.21 0 .3.21.66.79.55A10.97 10.97 0 0 0 23.5 12.02C23.5 5.66 18.35.5 12 .5Z"/></svg>
+              <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/mdtnoor/" target="_blank" rel="noopener" class="icon-link" aria-label="LinkedIn profile">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://leetcode.com/u/mdtahammulnoor/" target="_blank" rel="noopener" class="icon-link" aria-label="LeetCode profile">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M16.5 2.5 7.8 11.2a2.7 2.7 0 0 0 0 3.8l4.2 4.2a2.6 2.6 0 0 0 3.7 0l1.9-1.9a1.3 1.3 0 0 0-1.8-1.8l-1.9 1.8a.9.9 0 0 1-1.3 0l-4.1-4.1a.9.9 0 0 1 0-1.3l8.7-8.7a1.3 1.3 0 0 0-1.8-1.7ZM10 14.8h7.7a1.3 1.3 0 1 0 0-2.6H10a1.3 1.3 0 0 0 0 2.6Z"/></svg>
+              <span>LeetCode</span>
+            </a>
+            <a href="https://www.geeksforgeeks.org/profile/thanos7" target="_blank" rel="noopener" class="icon-link" aria-label="GeeksforGeeks profile">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M9.4 16.6 4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4Zm5.2 0L19.2 12l-4.6-4.6L16 6l6 6-6 6-1.4-1.4Z"/></svg>
+              <span>GeeksforGeeks</span>
+            </a>
+          </div>
+          <a href="assets/resume.pdf" download class="btn btn-outline-light contact-resume-btn">Download résumé</a>
+        </div>
+
+        <!-- Contact form: submits via Formspree (https://formspree.io), a hosted form
+             backend — no server of your own required. Works for every visitor, including
+             people with no default mail client configured (webmail-only users), because
+             it never depends on mailto: at all.
+             Connected to form ID mvzjpbvp, destination set in the Formspree dashboard.
+             The <form action> below is also a real fallback: if JavaScript is off or
+             fails, the browser still POSTs straight to Formspree and the visitor lands
+             on Formspree's default "thanks" page. js/main.js intercepts the submit when
+             JS is available to keep the visitor on this page instead. -->
+        <form class="contact-form" id="contactForm" data-reveal
+              action="https://formspree.io/f/mvzjpbvp" method="POST">
+          <input type="hidden" name="_subject" value="New message from portfolio site">
+
+          <!-- Honeypot: invisible to real visitors (off-screen, not tab-focusable,
+               hidden from screen readers), but most spam bots fill every field they
+               find. Formspree silently discards any submission where this is non-empty.
+               main.js also short-circuits client-side if it's filled, so bots don't
+               even cost you a submission against your monthly quota. -->
+          <div class="hp-field" aria-hidden="true">
+            <label for="cf-hp">Leave this field empty</label>
+            <input type="text" id="cf-hp" name="_gotcha" tabindex="-1" autocomplete="off">
+          </div>
+
+          <label for="cf-name">Name</label>
+          <input type="text" id="cf-name" name="name" required autocomplete="name">
+
+          <label for="cf-email">Your email</label>
+          <input type="email" id="cf-email" name="_replyto" required autocomplete="email">
+
+          <label for="cf-message">Message</label>
+          <textarea id="cf-message" name="message" rows="4" required></textarea>
+
+          <button type="submit" class="btn btn-primary">Send message</button>
+          <p class="contact-form-note" id="contactFormNote" role="status" aria-live="polite"></p>
+
+          <p class="contact-form-fallback">
+            Prefer email directly?
+            <a href="mailto:noorali99307@gmail.com">noorali99307@gmail.com</a>
+            <button type="button" class="copy-email-btn" id="copyEmailBtn" data-email="noorali99307@gmail.com">Copy</button>
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p>© <span id="footerYear"></span> Md Tahammul Noor. Built with HTML, CSS, and GSAP.</p>
+    <a href="#home" class="footer-top">Back to top ↑</a>
+  </div>
+</footer>
+
+<!-- GSAP (CDN) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
