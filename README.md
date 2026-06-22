@@ -151,13 +151,3 @@ Vercel's DNS instructions.
   proof-strip count-up. Everything respects `prefers-reduced-motion`, and if the CDN
   is ever blocked or slow, `js/main.js` detects it and reveals all content immediately
   instead of leaving the page stuck invisible.
-
-## Before you deploy — checklist
-
-- [x] Formspree form ID connected (`mvzjpbvp`).
-- [ ] Confirm `assets/resume.pdf` is your latest version.
-- [ ] Skim `index.html` for any wording you'd tweak — all copy is rephrased from your
-      resume content, nothing invented.
-- [ ] Confirm the Formspree verification email (sent on your first real test submission).
-- [ ] Test the contact form on the live Vercel URL once deployed — send yourself a real
-      test message to confirm delivery end-to-end.
