@@ -237,7 +237,7 @@ portfolio sites:
 | Contact form spam | Covered by Formspree's built-in reCAPTCHA-based spam filtering | ✅ Covered |
 
 **Note on the Formspree endpoint being public:**  
-The form ID (`mvzjpbvp`) is visible in the page's HTML source — this is expected and
+The form ID is visible in the page's HTML source — this is expected and
 fine. It's functionally equivalent to a public webhook URL. It cannot be used to read
 your emails, impersonate you, or access your Formspree account. The only realistic
 misuse is spamming the form endpoint directly (bypassing the frontend UI), which
@@ -299,7 +299,7 @@ Live URL: https://portfolio-rosy-psi-74.vercel.app/
 
 **What's fully working:**
 - All project cards link to real GitHub repos and live demos
-- Contact form submits via Formspree (form ID `mvzjpbvp`), delivers to
+- Contact form submits via Formspree, delivers to
   `noorali99307@gmail.com`
 - Inline success/error feedback on the form — visitor always knows what happened
 - "Prefer email directly?" link + one-click Copy button as a permanent manual fallback
